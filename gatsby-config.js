@@ -1,15 +1,30 @@
 module.exports = {
+  pathPrefix: "/blog",
   siteMetadata: {
     // edit below
-    title: `Gatsby Starter Personal Blog`,
-    author: `Gatsby`,
+    title: `My Personal Blog`,
+    author: `Vitor Veras`,
     description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://vitorverasm.github.io/blog/`,
     social: {
-      twitter: `gatsbyjs`,
+      twitter: `vitorverasm`,
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-BXW9TYQBYE"],
+        gtagConfig: {
+          anonymize_ip: true,
+        },
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+          anonymize_ip: true,
+        },
+      },
+    },
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,

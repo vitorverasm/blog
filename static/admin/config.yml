@@ -1,9 +1,11 @@
 backend:
   name: github
-  repo: thomaswang/gatsby-personal-starter-blog
+  repo: vitorverasm/blog
+  branch: main
+  site_domain: sdas32a1d33541.netlify.app
 
-media_folder: content/assets
-public_folder: ../assets
+media_folder: "assets/img/posts" # Media files will be stored in the repo under images/uploads
+public_folder: "/assets/img/posts" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
   - name: blog
