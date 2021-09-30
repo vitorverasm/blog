@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: vitorverasm/vitorverasm.github.io
+  branch: main
+  site_domain: sdas32a1d33541.netlify.app
+
+media_folder: "assets/img/posts" # Media files will be stored in the repo under images/uploads
+public_folder: "/assets/img/posts" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date }
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: body, label: Body, widget: markdown }
