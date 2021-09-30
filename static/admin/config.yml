@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: vitorverasm/blog
+  repo: vitorverasm/vitorverasm.github.io
   branch: main
   site_domain: sdas32a1d33541.netlify.app
 
